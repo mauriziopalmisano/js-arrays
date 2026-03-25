@@ -34,27 +34,39 @@ for (let i = 0; i < teachers.length; i++) {
 
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
 
-///////////variante specifica per risolvere la situazione//////////////////
-// let lastTeacher = teachers[teachers.length-1];
-// teachers.pop();
-// console.log(teachers);
-// console.log(lastTeacher);
+const lastTeacher = teachers[teachers.length-1];
+teachers.pop();
+console.log(teachers);
+console.log(lastTeacher);
 
-let lastTeacher = null;
 
-for (let i = 0; i < teachers.length; i++) {
-  if (i === teachers.length-1) {
-    lastTeacher = teachers[i];
-    teachers.pop();
-    console.log(teachers);
-    console.log(lastTeacher);
-  }
-}
+
+//non credo serva nessun ciclo per risolvere l'esercizio 
+// let lastTeacher = null;
+
+// for (let i = 0; i < teachers.length; i++) {
+//   if (i === teachers.length-1) {
+//     lastTeacher = teachers[i];
+//     teachers.pop();
+//     console.log(teachers);
+//     console.log(lastTeacher);
+//   }
+// }
 
 // 4. Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher qui sotto
-const firstTeacher = null;
+
+const firstTeacher = teachers[0];
+teachers.shift();
+console.log(teachers);
+console.log(firstTeacher);
+
+
+
+
 
 // 5. Aggiungi un insegnante di nome 'Vanessa' alla fine dell'array teachers
+
+
 
 // 6. Aggiungi un insegnante di nome 'Sarah' all'inizio dell'array teachers
 
