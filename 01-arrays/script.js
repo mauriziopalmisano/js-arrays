@@ -88,4 +88,12 @@ for (let i = 0; i < teachers.length; i++) {
 
 // 8. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
-const isTeachersEmpty = null;
+let isTeachersEmpty = null;
+
+if (teachers.length === 0){
+  isTeachersEmpty = true;
+}else{
+  isTeachersEmpty = false;
+}
+
+console.log(isTeachersEmpty);
