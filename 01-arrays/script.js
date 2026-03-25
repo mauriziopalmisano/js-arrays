@@ -21,6 +21,9 @@ for (let i = 0; i < teachers.length; i++) {
 
 // 2. Sostituisci il quinto insegnante nell'array teachers con 'Patrick'
 
+///////////variante specifica per risolvere la situazione//////////////////
+//teachers.splice(4, 1, ''Patrick);
+//console.log(teachers)
 
 for (let i = 0; i < teachers.length; i++) {
   if (i === 4) {
@@ -30,7 +33,23 @@ for (let i = 0; i < teachers.length; i++) {
 }
 
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
-const lastTeacher = null;
+
+///////////variante specifica per risolvere la situazione//////////////////
+// let lastTeacher = teachers[teachers.length-1];
+// teachers.pop();
+// console.log(teachers);
+// console.log(lastTeacher);
+
+let lastTeacher = null;
+
+for (let i = 0; i < teachers.length; i++) {
+  if (i === teachers.length-1) {
+    lastTeacher = teachers[i];
+    teachers.pop();
+    console.log(teachers);
+    console.log(lastTeacher);
+  }
+}
 
 // 4. Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher qui sotto
 const firstTeacher = null;
